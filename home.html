@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waning</title>
+    <link rel="icon" href="warning.png" type="x.png">
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: white;
+            flex-direction: column;
+            overflow: hidden;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        p{
+            font-weight: bold;
+        }
+
+        button{
+            width: 100px;
+            height: 50px;
+            color: black;
+            font-weight: bold;
+            font-size: large;
+            background-color: red;
+            border: solid 2px rgb(0, 0, 0);
+        }
+
+        button:hover{
+            transition: 0.2s ease-in-out;
+            transform: scale(1.1);
+        }
+
+        button:active{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <img src="warning.png" width="200px">
+        <h1>รหัสผ่านนี้มีผู้ใช้แล้ว</h1>
+        <p>รหัสผ่าน 'admin123' มีในระบบแล้ว โดยเป็นของผู้ใช้ชื่อ 'admin'
+            <br>โปรดใช้ชื่ออื่น</p>
+        <button onclick="openLink()">OK</button>
+    </center>
+    <script>
+        function openLink() {
+          window.location.href = "index.html";
+        }
+      </script>
+</body>
+</html>
